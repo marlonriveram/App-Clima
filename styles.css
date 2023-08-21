@@ -63,7 +63,7 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     gap: 30px;
-    grid-auto-rows: 160px 110px ;
+    grid-auto-rows: 160px 111px ;
 }
 .container-otros-datos-cartas{
     background: #1E213A;
