@@ -4,37 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicion del clima</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <h1>APP del Clima</h1>
-    <label for="city"> Ciudad :</label>
-    <input type="text" placeholder="Nombre de la Ciudad" id="city">
+    <main>
+        <div class="container-temActual containers-principal">
 
-    <div id="continer_geocodificacion">
-        <div id="geocodificacion">
-            <h3>Latitud :</h3>
-            <span id="lat"></span>
+            <div class="container-temActual-arriba">
+            <!-- <input type="text" placeholder="Buscar lugar" class="container-temActual-input"> -->
+            <button> Buscar Lugar</button>
+            <figure class="container-icon-clima">
+                <img src="" alt="icon-clima" class="container-icon-clima-icon">
+            </figure>
+
+            </div>
+
+            <div class="container-temActual-abajo">
+
+            <div class="container-temActual-temp">15°c</div>
+            <div class="condicion-climatica">Shower</div>
+
+            </div>
         </div>
-    
-        <div id="geocodificacion">
-            <h3>Longitud :</h3>
-            <span id="lon"></span>
+
+        <div class="container-otros-datos containers-principal">
+         
+            <div class="container-otros-datos-subcontainer">
+
+                <div class="container-otros-datos-clima-5dias">
+                    <div class="container-otros-datos-cartas">
+                        <p>hoy</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                    </div>
+                    
+                    <div class="container-otros-datos-cartas">
+                        <p>hoy</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                    </div>
+
+                    <div class="container-otros-datos-cartas">
+                        <p>hoy</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                    </div>
+
+                    <div class="container-otros-datos-cartas">
+                        <p>hoy</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                    </div>
+
+                    <div class="container-otros-datos-cartas">
+                        <p>hoy</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                    </div>
+                </div>
+
+                <div class="container-otros-datos-clima-hoy">
+                    <h3>Detalles clima</h3>
+                    <div class="container-cartas-clima-hoy">
+                        <div class="velocidad-viento container container-otros-datos-cartas">
+                        <p>velocidad viento</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                        </div>
+
+                        <div class="humedad container container-otros-datos-cartas">
+                        <p>velocidad viento</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                        </div>
+
+                        <div class="visibilidad container container-otros-datos-cartas">
+                        <p>velocidad viento</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                        </div>
+
+                        <div class="presion-de-aire container container-otros-datos-cartas">
+                        <p>velocidad viento</p>
+                        <p>
+                            <span>7</span> mph
+                        </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
-    </div>
-  
-    <div id="condicion_clima">
-        <h3>Condiciones Clima :</h3>
-        <span id="clima">
-
-        </span>
-    </div>
-
-    <div class="container_temperatura">
-        <h3>Tempetarura Actual :</h3>
-        <span id="temperatura">
-
-        </span>
-    </div>
+    </main>
 
     <script src="main.js"></script>
 </body>

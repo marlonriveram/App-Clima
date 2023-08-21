@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0; 
+}
+
+main{
+    display: flex;
+}
+.container-temActual{
+    width: 33%;
+    background: #1E213A;
+}
+.container-otros-datos{
+    width: 77%;
+    background: #100E1D;
+    padding: 20px;
+}
+.containers-principal{
+    display: grid;
+    min-width: 300px;
+}
+.container-otros-datos-subcontainer{
+    width: 80%;
+    min-width: 300px;
+    margin: auto;
+    padding: 40px 0;
+}
+.container-otros-datos-clima-5dias{
+    display: grid;
+    justify-content:space-between; 
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit,minmax(80px,120px));
+    grid-auto-rows: 150px;
+    margin-bottom: 50px;
+}
+.container-cartas-clima-hoy{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 30px;
+    grid-auto-rows: 160px 110px ;
+}
+.container-otros-datos-cartas{
+    background: #1E213A;
+}
+
+@media (max-width:630px) {
+    main{
+        display:block;
+    }
+    .container-temActual{
+        width: 100%;
+        min-width: 375px;
+        height: 500px;
+    }
+    .container-otros-datos{
+        width: 100%;
+        min-width: 375px;
+    }
+}
