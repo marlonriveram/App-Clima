@@ -45,14 +45,14 @@ async function ciudades (name){   // cosumo api de geolocalizacion
 };
 
 // Detecta cuando dentro del input se preciona  Enter
-inputCity.addEventListener('keydown',(event) =>{
-    if (event.key === 'Enter') {         // Detectar si se preciono enter
-        event.preventDefault();          // Evita que al priconar enter se mande el formulario
-        inputCity.blur();               // quita el foco del input
-        ciudades(event.target.value);
+// inputCity.addEventListener('keydown',(event) =>{
+//     if (event.key === 'Enter') {         // Detectar si se preciono enter
+//         event.preventDefault();          // Evita que al priconar enter se mande el formulario
+//         inputCity.blur();               // quita el foco del input
+//         ciudades(event.target.value);
         
-    }
-});
+//     }
+// });
 
 
 
