@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aplicion del clima</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <main>
@@ -12,7 +17,7 @@
 
             <div class="temperatura-subcontainer-superior">
                 <!-- <input type="text" placeholder="Buscar lugar" class="container-temActual-input"> -->
-                <button class="temperatura-btn"> Buscar Lugar</button>
+                <button class="btn-buscar"> Buscar Lugar</button>
                 <figure class="container-img-clima">
                     <img src="" alt="icon-clima" class="img">
                 </figure>
@@ -27,6 +32,35 @@
                 </div>
                 <div class="condicion-climatica"><p>shower</p></div>
 
+            </div>
+            
+            <div class="container-cambiar-pais">
+              <div class="subcontainer-cambiar-pais">
+                <div class="close">
+                    <i class="fas fa-times"></i>
+                </div>
+                <div class="cambiar-pais">
+                    <input type="text" placeholder="Ciudad" class="ciudad">
+                    <button 
+                   type="submit" class="btn-buscar-pais">Buscar</button>
+                  </div>
+    
+                    <div class="localizacion">
+                        <div class="localizacion-lat localizacion-prop-letra">
+                            <span class="lat">lat :</span>
+                            <span  class="tamaño-valor-lon-lat" id="valor-lat"></span>
+                        </div>
+    
+                        <div class="localizacion-lon localizacion-prop-letra">
+                            <span class="lon">lon :</span>
+                            <span class="tamaño-valor-lon-lat" id="valor-lon"></span>
+                        </div>
+
+                        <div class="localizacion-prop-letra">
+                            <span class="localizacion-ciudad"></span>
+                        </div>
+                    </div>
+              </div>
             </div>
         </div>
 
@@ -46,7 +80,7 @@
                         <div class="clima-actual-cartas color_carta tamaño_carta_clima_catual_grande">
                         <p>velocidad viento</p>
                         <p class="texto-clima-actual">
-                            <span class="velocidad-viento numero-clima-actual">7</span> <span class="unidades-medida">metros/seg</span>
+                            <span class="velocidad-viento numero-clima-actual">7</span> <span class="unidades-medida">m/s</span>
                         </p>
                         </div>
 
