@@ -1,7 +1,7 @@
 const city = (name) =>`https://api.openweathermap.org/geo/1.0/direct?q=${name}&limit=1&appid=6d38995b3a17ddfebcd1527c2a264c29&lang=es`;
 const datosActuales = (lat,lon) =>`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=6d38995b3a17ddfebcd1527c2a264c29&lang=es&units=metric`;
 const datosHora = (lat,lon) => `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=6d38995b3a17ddfebcd1527c2a264c29&lang=es&units=metric&cnt=5`;
-const urlIconClima = (codigo) => `https://openweathermap.org/img/wn/${codigo}@2x.png`
+const urlIconClima = (codigo) => `https://openweathermap.org/img/wn/${codigo}@2x.png`;
 
 const inputCity = document.querySelector('.ciudad');
 const btnBuscar = document.querySelector('.btn-buscar');
