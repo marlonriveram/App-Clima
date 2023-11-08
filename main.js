@@ -5,6 +5,7 @@ const urlIconClima = (codigo) => `https://openweathermap.org/img/wn/${codigo}@2x
 
 const inputCity = document.querySelector('.ciudad');
 const btnBuscar = document.querySelector('.btn-buscar');
+const btnBuscarPais = document.querySelector('.btn-buscar-pais');
 const cerrar = document.querySelector('.close');
 const containerCambiarPais = document.querySelector('.container-cambiar-pais');
 const lat = document.getElementById('valor-lat');
@@ -118,6 +119,7 @@ function closeAside (){
 
 btnBuscar.addEventListener('click',showAside);
 cerrar.addEventListener('click',closeAside);
+btnBuscarPais.addEventListener('click',closeAside);
 
 // Detecta cuando dentro del input se preciona  Enter
 inputCity.addEventListener('keydown',(event) =>{
