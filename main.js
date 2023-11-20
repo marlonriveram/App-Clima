@@ -123,6 +123,7 @@ function manejadorEvenetos (event){
         inputCity.blur();
         console.log(event)               // quita el foco del input
         ciudades(event.target.value);
+        closeAside()
     }
   };
 
@@ -131,7 +132,10 @@ function manejadorEvenetos (event){
     inputCity.blur();
     console.log(event)               // quita el foco del input
     ciudades(inputCity.value);
+    closeAside()
   }
+
+ 
 }
 
 //Mostrar aside
