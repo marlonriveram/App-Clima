@@ -114,26 +114,38 @@ function showAside (){
 
 function closeAside (){
     containerCambiarPais.classList.remove('show');
-}
+};
 
-
-btnBuscar.addEventListener('click',showAside);
-cerrar.addEventListener('click',closeAside);
-btnBuscarPais.addEventListener('click',closeAside);
-
-// Detecta cuando dentro del input se preciona  Enter
-inputCity.addEventListener('keydown',(event) =>{
+function manejadorEvenetos (event){
+  if(event.type === 'keydown'){
     if (event.key === 'Enter') {         // Detectar si se preciono enter
         event.preventDefault();          // Evita que al priconar enter se mande el formulario
         inputCity.blur();
-        console.log('hola')               // quita el foco del input
+        console.log(event)               // quita el foco del input
         ciudades(event.target.value);
-        
     }
+  };
 
-    
-});
+  if(event.type === 'click'){
+    event.preventDefault();          // Evita que al priconar enter se mande el formulario
+    inputCity.blur();
+    console.log(event)               // quita el foco del input
+    ciudades(inputCity.value);
+  }
+}
+
+//Mostrar aside
+btnBuscar.addEventListener('click',showAside);
+
+// Cerrar aside
+cerrar.addEventListener('click',closeAside);
+
+
+// Detecta cuando dentro del input se preciona  Enter
+inputCity.addEventListener('keydown',manejadorEvenetos);
+btnBuscarPais.addEventListener('click',manejadorEvenetos);
+// Detecta cuando dentro le da click al boton buscar
 
 
 
-
+ciudades('medellin')
